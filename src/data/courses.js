@@ -1,0 +1,151 @@
+const courses = [
+  {
+    id: "dsa-in-java",
+    title: "Data Structures & Algorithms in Java",
+    category: "DSA",
+    level: "Intermediate",
+    price: 6999,
+    rating: 4.8,
+    students: 12500,
+    image: "https://placehold.co/400x250?text=DSA+in+Java",
+    description:
+      "Master data structures and algorithms with hands-on problem solving, from arrays to graphs.",
+    curriculum: [
+      "Arrays & Strings",
+      "Linked Lists",
+      "Stacks & Queues",
+      "Trees & Graphs",
+      "Dynamic Programming",
+    ],
+  },
+  {
+    id: "full-stack-web-dev",
+    title: "Full Stack Web Development",
+    category: "Web Development",
+    level: "Beginner",
+    price: 8999,
+    rating: 4.7,
+    students: 9800,
+    image: "https://placehold.co/400x250?text=Full+Stack+Dev",
+    description:
+      "Learn HTML, CSS, JavaScript, React and Node.js to build complete web applications.",
+    curriculum: [
+      "HTML & CSS",
+      "JavaScript",
+      "React",
+      "Node & Express",
+      "MongoDB",
+    ],
+  },
+  {
+    id: "python-for-beginners",
+    title: "Python for Beginners",
+    category: "Programming",
+    level: "Beginner",
+    price: 3999,
+    rating: 4.6,
+    students: 15200,
+    image: "https://placehold.co/400x250?text=Python",
+    description:
+      "Start your programming journey with Python — syntax, logic building, and basic projects.",
+    curriculum: [
+      "Basics & Syntax",
+      "Loops & Functions",
+      "OOP in Python",
+      "Mini Projects",
+    ],
+  },
+  {
+    id: "competitive-programming",
+    title: "Competitive Programming",
+    category: "DSA",
+    level: "Advanced",
+    price: 7499,
+    rating: 4.9,
+    students: 5400,
+    image: "https://placehold.co/400x250?text=Competitive+Programming",
+    description:
+      "Sharpen your problem-solving speed for coding contests and technical interviews.",
+    curriculum: [
+      "Time Complexity",
+      "Greedy Algorithms",
+      "Graph Theory",
+      "Advanced DP",
+    ],
+  },
+
+  {
+    id: "machine-learning-basics",
+    title: "Machine Learning Fundamentals",
+    category: "Data Science",
+    level: "Intermediate",
+    price: 8499,
+    rating: 4.7,
+    students: 6200,
+    image: "https://placehold.co/400x250?text=Machine+Learning",
+    description:
+      "Understand core ML concepts, algorithms, and build your first predictive models with Python.",
+    curriculum: [
+      "Python for ML",
+      "Regression & Classification",
+      "Model Evaluation",
+      "Intro to Neural Networks",
+    ],
+  },
+  {
+    id: "react-native-mobile-dev",
+    title: "Mobile App Development with React Native",
+    category: "Web Development",
+    level: "Intermediate",
+    price: 7999,
+    rating: 4.6,
+    students: 4100,
+    image: "https://placehold.co/400x250?text=React+Native",
+    description:
+      "Build cross-platform mobile apps for iOS and Android using React Native and JavaScript.",
+    curriculum: [
+      "React Native Basics",
+      "Navigation",
+      "Native Device APIs",
+      "Publishing to App Stores",
+    ],
+  },
+  {
+    id: "system-design-interview-prep",
+    title: "System Design Interview Preparation",
+    category: "DSA",
+    level: "Advanced",
+    price: 9499,
+    rating: 4.9,
+    students: 3800,
+    image: "https://placehold.co/400x250?text=System+Design",
+    description:
+      "Crack system design rounds at top tech companies with real interview case studies.",
+    curriculum: [
+      "Scalability Basics",
+      "Load Balancing",
+      "Database Sharding",
+      "Case Studies: Design Twitter, Uber",
+    ],
+  },
+  {
+    id: "sql-for-beginners",
+    title: "SQL for Data Analysis",
+    category: "Data Science",
+    level: "Beginner",
+    price: 2999,
+    rating: 4.5,
+    students: 11000,
+    image: "https://placehold.co/400x250?text=SQL",
+    description:
+      "Learn to query, filter, and analyze data using SQL — a must-have skill for any tech role.",
+    curriculum: [
+      "SELECT & WHERE",
+      "JOINs",
+      "Aggregations & GROUP BY",
+      "Subqueries",
+    ],
+  },
+];
+
+export default courses;
