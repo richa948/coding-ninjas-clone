@@ -83,7 +83,7 @@ function Auth() {
                 value={loginData.password}
                 onChange={handleLoginChange}
                 required
-                className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="mt-1 w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <button

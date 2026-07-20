@@ -58,7 +58,7 @@ function Home() {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="bg-white border border-gray-100 rounded-lg shadow-sm p-6"
+              className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg shadow-sm p-6"
             >
               <p className="text-gray-600 italic">"{t.quote}"</p>
               <div className="mt-4">
@@ -72,8 +72,10 @@ function Home() {
 
       {/* ---------- FEATURED COURSES SECTION ---------- */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-bold text-gray-900">Featured Courses</h2>
-        <p className="mt-2 text-gray-600">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          Featured Courses
+        </h2>
+        <p className="mt-2 text-gray-600 dark:text-gray-400">
           Start learning with our most popular courses.
         </p>
 

@@ -1,22 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import CourseCard from "../components/CourseCard";
 import courses from "../data/courses";
 
 function Courses() {
-  // This state remembers which category is currently selected.
-  // "All" means no filter is applied — show everything.
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchParams] = useSearchParams();
 
-  // Build the list of category buttons to show, based on real course data.
-  // We add "All" at the front manually since it's not a real category.
+  // Whenever the URL's ?category= value changes, sync it into our state.
+  // This is what makes navbar dropdown links pre-filter this page.
+  useEffect(() => {
+    const categoryFromUrl = searchParams.get("category");
+    if (categoryFromUrl) {
+      setSelectedCategory(categoryFromUrl);
+    }
+  }, [searchParams]);
+
   const categories = [
     "All",
     ...new Set(courses.map((course) => course.category)),
   ];
 
-  // This is the actual filtering logic.
-  // If "All" is selected, show every course.
-  // Otherwise, only keep courses whose category matches selectedCategory.
   const filteredCourses =
     selectedCategory === "All"
       ? courses
